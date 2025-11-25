@@ -4,12 +4,18 @@
 ClapTrap::ClapTrap()
 {
     this->name = "noname Badass";
+    this->energyPoint = 10;
+    this->hitPoint = 10;
+    this->attackDamage = 0;
     std::cout << "Claptrap named: " << this->name << " has been created\n";
 }
 
 ClapTrap::ClapTrap( std::string name)
 {
     this->name = name;
+    this->energyPoint = 10;
+    this->hitPoint = 10;
+    this->attackDamage = 0;
     std::cout << "Claptrap named: " << this->name << " has been created\n";
 }
 

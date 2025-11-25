@@ -1,5 +1,6 @@
 #include "ClapTrap.hpp"
 #include "ScavTrap.hpp"
+#include "FragTrap.hpp"
 
 // ATTENTION CLASS CLAPTRAP PAS FINI DANS TOUT LES EXERCICES
 //IL MANQUE CLAPTRAP OPERATOR=(CLAPTRAP& OTHER); et surrement d autre ...
@@ -22,13 +23,14 @@ int main()
     clap.attack("target1");
     
     std::cout << "\n=== Creating ScavTrap ===" << std::endl;
-    ScavTrap scav("Alice");
+    FragTrap frag("Alice");
     
     std::cout << "\n=== Testing ScavTrap ===" << std::endl;
-    scav.attack("enemy");      // Attaque modifiée
-    scav.takeDamage(30);       // Fonction héritée
-    scav.beRepaired(20);       // Fonction héritée
-    scav.guardGate();          // Fonction unique
+    frag.attack("enemy");
+    frag.takeDamage(30);
+    frag.beRepaired(20); 
+    frag.highFivesGuys();
+    //    frag.guardGate();          // Fonction de scav qui ne devrait pas etre herité
     
     std::cout << "\n=== Destruction (automatic) ===" << std::endl;
     return 0;

@@ -12,11 +12,11 @@
 class ClapTrap
 {
 private:
-
+//il faut peut etre les initialiser dans le constructeur !!!
     std::string name;
-    int hitPoint = 10;
-    int energyPoint = 10;
-    int attackDamage = 0;
+    int hitPoint;
+    int energyPoint;
+    int attackDamage;
 
 public:
     ClapTrap();
