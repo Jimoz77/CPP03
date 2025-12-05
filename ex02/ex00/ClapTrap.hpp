@@ -14,19 +14,19 @@ class ClapTrap
 private:
 //il faut peut etre les initialiser dans le constructeur !!!
     std::string name;
-    int hitPoints;
-    int energyPoints;
+    int hitPoint;
+    int energyPoint;
     int attackDamage;
 
 public:
     ClapTrap();
     ClapTrap(std::string name);
-  	ClapTrap(const ClapTrap& other);
+  //ClapTrap(const Claptrap& other)
     void attack(const std::string& target);
     void takeDamage(unsigned int amount);
     void beRepaired(unsigned int amount);
-	
-	ClapTrap& operator=(const ClapTrap& other);
+
+    // operator=()
     ~ClapTrap();
 };
 
